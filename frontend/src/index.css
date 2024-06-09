@@ -1,0 +1,124 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: 0.6s;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #424242;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green background */
+  border: none;              /* Remove borders */
+  color: white;              /* White text */
+  padding: 10px 20px;        /* Some padding */
+  text-align: center;        /* Centered text */
+  text-decoration: none;     /* Remove underline */
+  display: inline-block;     /* Get the element to behave like an inline-block */
+  font-size: 16px;           /* Increase font size */
+  margin: 4px 2px;           /* Some margin */
+  cursor: pointer;           /* Pointer/hand icon */
+  border-radius: 8px;        /* Rounded corners */
+  transition-duration: 0.4s; /* Smooth transition */
+}
+
+.button:hover {
+  background-color: white;   /* White background on hover */
+  color: black;              /* Black text on hover */
+  border: 2px solid #4CAF50; /* Green border on hover */
+}
+
+.button-edit {
+  background-color: #008CBA; /* Blue background */
+}
+
+.button-edit:hover {
+  background-color: white;   /* White background on hover */
+  color: black;              /* Black text on hover */
+  border: 2px solid #008CBA; /* Blue border on hover */
+}
+
+.button-delete {
+  background-color: #f44336; /* Red background */
+}
+
+.button-delete:hover {
+  background-color: white;   /* White background on hover */
+  color: black;              /* Black text on hover */
+  border: 2px solid #f44336; /* Red border on hover */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #585858;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+li:nth-child(odd) {
+  background-color: #efefef;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-in-out;
+}
