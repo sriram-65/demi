@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import './App.css' // Import the CSS file
 
 const App = () => {
   const [posts, setPosts] = useState([])
@@ -63,6 +62,8 @@ const App = () => {
   }
 
   return (
+    <>
+    
     <div className="container">
       <h1>Make a Day</h1>
       <textarea
@@ -99,6 +100,7 @@ const App = () => {
           ))
       }
     </div>
+    </>
   )
 }
 

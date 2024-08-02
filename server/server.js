@@ -55,7 +55,7 @@ app.delete("/delete/:id", async (req, res) => {
   }
 })
 
-// Edit endpoint
+
 app.put("/edit/:id", async (req, res) => {
   try {
     const { id } = req.params
@@ -68,7 +68,7 @@ app.put("/edit/:id", async (req, res) => {
     const updatedDocument = await UserModel.findByIdAndUpdate(
       id,
       { des },
-      { new: true } // This option returns the modified document
+      { new: true } 
     )
 
     if (!updatedDocument) {
